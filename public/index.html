@@ -9,7 +9,7 @@
   <body>
     <div id="app">
       <ul>
-        <li v-for="(thing, index) in things" v-bind:class="thing.isDone ? 'done':'not-done'">
+        <li v-for="(thing, index) in things" v-bind:class="thing.isDone ? 'is-done':'not-done'">
           <span>{{thing.what}} {{thing.priorityLevel}}</span>
           <span v-if="thing.isDone">Done!</span>
           <button v-if="!thing.isDone" v-on:click="thingDone(index)">Done</button>
@@ -19,9 +19,9 @@
         <label for="new-thing">Add a new thing</label>
         <input id="new-thing" type="text" v-model="newThing">
         <input type="submit" value="Save new thing">
-        <div class="low-priority">
+        <div class="">
           <label for="Low">Low</label>
-          <input type="radio" id="Low" name="priority" v-model="newPriorityLevel" value="Low">
+          <input type="radio" id="Low" name="priority" v-model="newPriorityLevel" value="Low"selected>
         </div>
         <div class="high-priority">
           <label for="">High</label>

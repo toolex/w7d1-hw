@@ -2,10 +2,10 @@ body {
   text-align: center;
 }
 
-low-priority {
+is-done {
   color: green;
 }
 
-high-priority {
+not-done {
   color: red;
 }
