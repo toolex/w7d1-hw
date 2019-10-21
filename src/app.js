@@ -18,6 +18,9 @@ document.addEventListener("DOMContentLoaded", () => {
           isDone: false
         });
         this.newThing = "";
+      },
+      thingDone: function (index) {
+        this.things[index].isDone = true;
       }
     }
   });

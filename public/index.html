@@ -12,6 +12,7 @@
         <li v-for="(thing, index) in things" v-bind:class="thing.isDone ? 'done':'not-done'">
           <span>{{thing.what}}</span>
           <span v-if="thing.isDone">Done!</span>
+          <button v-if="!thing.isDone" v-on:click="thingDone(index)">Done</button>
         </li>
       </ul>
       <form v-on:submit.prevent="saveNewThing">
