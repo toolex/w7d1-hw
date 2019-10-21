@@ -1,4 +1,11 @@
 body {
   text-align: center;
-  background-color: salmon;
+}
+
+low-priority {
+  color: green;
+}
+
+high-priority {
+  color: red;
 }
