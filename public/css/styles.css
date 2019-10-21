@@ -9,3 +9,8 @@ is-done {
 not-done {
   color: red;
 }
+
+li span{
+  padding: 50px;
+  text-align: center;
+}

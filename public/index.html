@@ -10,7 +10,8 @@
     <div id="app">
       <ul>
         <li v-for="(thing, index) in things" v-bind:class="thing.isDone ? 'is-done':'not-done'">
-          <span>{{thing.what}} {{thing.priorityLevel}}</span>
+          <span>{{thing.what}}</span>
+          <span>{{thing.priorityLevel}}</span>
           <span v-if="thing.isDone">Done!</span>
           <button v-if="!thing.isDone" v-on:click="thingDone(index)">Done</button>
         </li>
